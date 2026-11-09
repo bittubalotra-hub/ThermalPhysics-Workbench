@@ -1,0 +1,17 @@
+{
+  "title": "Generic steel-like slab: transient cooling",
+  "material": {
+    "name": "Illustrative steel-like material (not certified property data)",
+    "conductivity_w_mk": 45.0,
+    "density_kg_m3": 7800.0,
+    "heat_capacity_j_kgk": 500.0
+  },
+  "geometry": {"thickness_m": 0.02, "cells": 80},
+  "initial_temperature_c": 180.0,
+  "boundaries": {
+    "left": {"type": "convection", "h_w_m2k": 55.0, "ambient_c": 22.0},
+    "right": {"type": "convection", "h_w_m2k": 120.0, "ambient_c": 22.0}
+  },
+  "heat_source_w_m3": 0.0,
+  "solver": {"method": "crank-nicolson", "dt_s": 0.5, "steps": 900, "save_every": 30}
+}

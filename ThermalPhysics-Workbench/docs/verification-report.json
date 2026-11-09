@@ -1,0 +1,20 @@
+{
+  "reference": "Homogeneous 1D slab; equal fixed-temperature surfaces; Fourier-series solution",
+  "duration_s": 4.0,
+  "dt_s": 0.025,
+  "cells": [
+    20,
+    40,
+    80,
+    160
+  ],
+  "rmse_c": [
+    0.07769430111098748,
+    0.019323262848750595,
+    0.0047465838810627865,
+    0.0011737074024473224
+  ],
+  "observed_convergence_ratio_20_to_40": 4.020765111934035,
+  "observed_convergence_ratio_40_to_80": 4.070983118162869,
+  "observed_convergence_ratio_80_to_160": 4.044094696144527
+}

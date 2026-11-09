@@ -1,0 +1,17 @@
+{
+  "title": "Generic slab: heating between unequal fixed-temperature walls",
+  "material": {
+    "name": "Illustrative moderate-conductivity solid",
+    "conductivity_w_mk": 20.0,
+    "density_kg_m3": 3000.0,
+    "heat_capacity_j_kgk": 750.0
+  },
+  "geometry": {"thickness_m": 0.03, "cells": 100},
+  "initial_temperature_c": 25.0,
+  "boundaries": {
+    "left": {"type": "fixed", "temperature_c": 100.0},
+    "right": {"type": "fixed", "temperature_c": 40.0}
+  },
+  "heat_source_w_m3": 0.0,
+  "solver": {"method": "crank-nicolson", "dt_s": 0.1, "steps": 1200, "save_every": 40}
+}

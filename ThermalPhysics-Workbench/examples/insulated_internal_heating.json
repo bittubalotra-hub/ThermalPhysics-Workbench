@@ -1,0 +1,17 @@
+{
+  "title": "Insulated generic slab: uniform internal heat generation",
+  "material": {
+    "name": "Illustrative generic material",
+    "conductivity_w_mk": 12.0,
+    "density_kg_m3": 2600.0,
+    "heat_capacity_j_kgk": 880.0
+  },
+  "geometry": {"thickness_m": 0.025, "cells": 50},
+  "initial_temperature_c": 20.0,
+  "boundaries": {
+    "left": {"type": "insulated"},
+    "right": {"type": "insulated"}
+  },
+  "heat_source_w_m3": 150000.0,
+  "solver": {"method": "crank-nicolson", "dt_s": 0.2, "steps": 200, "save_every": 20}
+}
